@@ -27,16 +27,16 @@ int main (){
             current_position=0;
           }        
       }
-      if(dice==1){
+      if(dice==1){                // if it comes tails
         current_position+=2;
-          if(current_position==n){
+          if(current_position==n){  //did i reach ?
             coming++;
-            current_position=0;
+            current_position=0;     // if i have reached then position have to be zero to reach again to n. point
           }        
       }
     } 
-    if(current_position!=n){
-      current_position=0;
+    if(current_position!=n){        
+      current_position=0;           // if i passed n. point then position have to be zero to reach again to n. point
     }    
   }
   
