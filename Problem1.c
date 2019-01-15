@@ -13,21 +13,21 @@ int main (){
   srand(time(NULL));
   
   int i,j,n,current_position,dice; 
-  double coming;
+  double coming=0;                // we didnt reach yet !
   n=10000;                        // n=10000 means finite
   current_position=0;             // beginning of the road
   
   for(i=0;i<100000;i++){          // lets try 100000 times.
     for(j=0;j<10000;j++){
       dice = rand()%2;            // heads=0 or tails=1
-      if(n==0){                   // if it comes heads
+      if(dice==0){                   // if it comes heads
         current_position+=1;
           if(current_position==n){ //did i reach ? 
             coming++; 
             current_position=0;
           }        
       }
-      if(n==1){
+      if(dice==1){
         current_position+=2;
           if(current_position==n){
             coming++;
@@ -40,7 +40,7 @@ int main (){
     }    
   }
   
-  printf("Probability of reaching = %d",coming/100000);
+  printf("Probability of reaching = %lf",coming/100000);
   
 
 
