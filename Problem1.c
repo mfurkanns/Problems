@@ -14,7 +14,7 @@ int main (){
   
   int i,j,n,current_position,coin; 
   double coming=0;                // we didnt reach yet !
-  n=10000;                        // n=10000 means finite
+  n=10000;                        // n=10000 means infinite
   current_position=0;             // beginning of the road
   
   for(i=0;i<100000;i++){          // lets try 100000 times.
