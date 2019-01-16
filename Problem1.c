@@ -1,6 +1,6 @@
 /* You are given a coin and road.You will start from the beginning of the road and you have to reach to n. point of the road(n = ∞).
 You will move according to coin. Throw the coin.If it comes heads you can go 1 step otherwise 2. 
-WHAT IS THE PROBABİLİTY OF REACHING TO THE n. POINT ? */
+WHAT IS THE PROBABILITY OF REACHING TO THE n. POINT ? */
 
 
 
