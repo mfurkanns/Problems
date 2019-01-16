@@ -24,7 +24,7 @@ int main (){
         current_position+=1;
           if(current_position==n){ //did i reach ? 
             coming++; 
-            current_position=0;
+            current_position=0;    // if i have reached then position have to be zero to reach again to n. point
           }        
       }
       if(coin==1){                // if it comes tails
