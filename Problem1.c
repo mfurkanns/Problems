@@ -12,22 +12,22 @@ int main (){
   
   srand(time(NULL));
   
-  int i,j,n,current_position,dice; 
+  int i,j,n,current_position,coin; 
   double coming=0;                // we didnt reach yet !
   n=10000;                        // n=10000 means finite
   current_position=0;             // beginning of the road
   
   for(i=0;i<100000;i++){          // lets try 100000 times.
     for(j=0;j<10000;j++){
-      dice = rand()%2;            // heads=0 or tails=1
-      if(dice==0){                   // if it comes heads
+      coin = rand()%2;            // heads=0 or tails=1
+      if(coin==0){                   // if it comes heads
         current_position+=1;
           if(current_position==n){ //did i reach ? 
             coming++; 
             current_position=0;
           }        
       }
-      if(dice==1){                // if it comes tails
+      if(coin==1){                // if it comes tails
         current_position+=2;
           if(current_position==n){  //did i reach ?
             coming++;
