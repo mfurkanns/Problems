@@ -32,7 +32,7 @@ int main(){
 	
 	
 	// distribution of the girls and boys is almost equal
-	// because probability of birth girl equals probability of birth boy - law of nature :)
+	// because probability of girl birth equals probability of boy birth - law of nature :)
 	
 	return 0;
 }
